@@ -115,6 +115,13 @@ export interface CopilotOptions {
    * If not specified, a default model will be used.
    */
   model?: CopilotModel | CustomCopilotModel;
+
+  /**
+   * The endpoint to use. Can be used to override the default endpoint for the provider, without using a custom model.
+   * Allows support for third-party providers that use familiar API structures.
+   * If not specified, a default endpoint will be used.
+   */
+  endpoint?: string;
 }
 
 export type CustomCopilotModel = {
